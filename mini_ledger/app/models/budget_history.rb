@@ -1,0 +1,2 @@
+class BudgetHistory < ApplicationRecord
+end

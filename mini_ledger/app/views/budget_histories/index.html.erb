@@ -1,0 +1,17 @@
+<h1>Lịch sử hạn mức (budget_histories)</h1>
+
+<table border="1">
+  <tr>
+    <th>Nội dung</th>
+    <th>Số tiền</th>
+    <th>Số dư</th>
+  </tr>
+
+  <% @histories.each do |h| %>       <%# Chỉ chạy không in ra chữ gì%>
+    <tr>
+      <td><%= h.content %></td>      <%# In ra nội dung của mỗi lịch sử %>
+      <td><%= h.amount %></td>
+      <td><%= h.balance %></td>
+    </tr>
+  <% end %>
+</table>
